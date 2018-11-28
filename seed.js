@@ -10,8 +10,8 @@ const cheesyQuiche = {
     ingredients: []
   };
 
-db.Food.remove({}, function(err, foods){
-  db.Ingredient.remove({}, function(err,ingreds){});
+db.Food.remove({}, (err, foods) =>{
+  db.Ingredient.remove({}, (err,ingreds) =>{});
   db.Ingredient.create( cheddar , (err, savedCheese) => {
       if (err) {
         return console.log(err);
